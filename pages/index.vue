@@ -225,11 +225,11 @@
             <div class="flex flex-1 flex-col space-y-6">
               <div class="flex space-x-4 items-center">
                 <h4 class="text-xl font-semibold">Speaking</h4>
-                <p>- 6</p>
+                <p class="text-right">- 6</p>
               </div>
               <div class="flex space-x-4 items-center">
                 <h4 class="text-xl font-semibold">Writing</h4>
-                <p>- 5.5</p>
+                <p class="text-right">- 5.5</p>
               </div>
             </div>
           </div>
