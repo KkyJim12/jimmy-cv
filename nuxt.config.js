@@ -58,7 +58,7 @@ export default {
         'faLaravel',
         'faJs',
         'faPhp',
-        'faAws',
+        'faGitAlt',
       ],
     },
   },

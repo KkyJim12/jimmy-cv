@@ -1,6 +1,7 @@
 <template>
   <div
-    class="bg-white shadow-md p-10 flex flex-col space-y-6 mt-6 rounded h-96 overflow-auto"
+    style="height: 60vh"
+    class="bg-white shadow-md p-10 flex flex-col space-y-6 mt-6 rounded overflow-auto "
   >
     <h1 class="text-2xl font-semibold">Highlight Projects</h1>
     <div class="flex flex-col space-y-6">

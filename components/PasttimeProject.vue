@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white shadow-md p-10 flex flex-col space-y-6 mt-6 rounded h-96 overflow-auto"
+    class="bg-white shadow-md p-10 flex flex-col space-y-6 mt-6 rounded md:h-80 lg:h-96 overflow-auto"
   >
     <h1 class="text-2xl font-semibold">Past time Projects</h1>
     <div class="flex flex-col space-y-6">
