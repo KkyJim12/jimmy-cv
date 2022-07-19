@@ -1,10 +1,10 @@
 <template>
   <div
-    class="grid grid-cols-12 p-10 gap-x-6 bg-gradient-to-r from-red-500 to-purple-500 min-h-screen"
+    class="grid grid-cols-12 p-10 gap-x-6 bg-gradient-to-r from-red-500 to-purple-500 min-h-screen gap-y-10 md:gap-y-6 2xl:gap-y-0"
   >
-    <div class="col-span-3">
+    <div class="col-span-12 md:col-span-4 2xl:col-span-3">
       <div
-        class="bg-white shadow-md p-10 flex flex-col space-y-3 rounded mb-6 h-full"
+        class="bg-white shadow-md p-10 flex flex-col space-y-3 rounded mb-6 h-full overflow-x-auto"
       >
         <img
           class="w-full h-auto rounded-full"
@@ -52,8 +52,10 @@
         </div>
       </div>
     </div>
-    <div class="col-span-6">
-      <div class="bg-white shadow-md p-10 flex flex-col space-y-6 rounded">
+    <div class="col-span-12 md:col-span-8 2xl:col-span-6">
+      <div
+        class="bg-white shadow-md p-10 flex flex-col space-y-6 rounded overflow-x-auto"
+      >
         <h1 class="text-2xl font-semibold">Stacks</h1>
         <div class="flex flex-col space-y-6">
           <div class="flex space-x-6">
@@ -125,9 +127,9 @@
       </div>
       <HighlightProject />
     </div>
-    <div class="col-span-3">
+    <div class="col-span-12 md:col-span-12 2xl:col-span-3">
       <div
-        class="bg-white shadow-md p-10 flex flex-col space-y-6 rounded h-full"
+        class="bg-white shadow-md p-10 flex flex-col space-y-6 rounded h-full overflow-x-auto"
       >
         <div class="flex flex-col space-y-6">
           <h1 class="text-2xl font-semibold">Educations</h1>
@@ -137,7 +139,9 @@
                 <h4>2022-current</h4>
               </div>
               <div class="col-span-2">
-                <p>MSc Computing at University of Northampton</p>
+                <p class="text-right">
+                  MSc Computing at University of Northampton
+                </p>
               </div>
             </div>
             <div class="grid grid-cols-3">
@@ -145,7 +149,9 @@
                 <h4>2021</h4>
               </div>
               <div class="col-span-2">
-                <p>Business & Management at University of Northampton</p>
+                <p class="text-right">
+                  Business & Management at University of Northampton
+                </p>
               </div>
             </div>
             <div class="grid grid-cols-3">
@@ -153,7 +159,9 @@
                 <h4>2019-2020</h4>
               </div>
               <div class="col-span-2">
-                <p>Business & Hotel Management at Finn College</p>
+                <p class="text-right">
+                  Business & Hotel Management at Finn College
+                </p>
               </div>
             </div>
             <div class="grid grid-cols-3">
@@ -161,7 +169,7 @@
                 <h4>2016</h4>
               </div>
               <div class="col-span-2">
-                <p>GED Certificate (Grade 12 Equavalence)</p>
+                <p class="text-right">GED Certificate (Grade 12 Equavalence)</p>
               </div>
             </div>
             <div class="grid grid-cols-3">
@@ -169,7 +177,7 @@
                 <h4>2014-2015</h4>
               </div>
               <div class="col-span-2">
-                <p>Sci-Math at Triamudom suksa School</p>
+                <p class="text-right">Sci-Math at Triamudom suksa School</p>
               </div>
             </div>
             <div class="grid grid-cols-3">
@@ -177,7 +185,9 @@
                 <h4>2011-2013</h4>
               </div>
               <div class="col-span-2">
-                <p>English Program at Samakkhi Wittayakom School</p>
+                <p class="text-right">
+                  English Program at Samakkhi Wittayakom School
+                </p>
               </div>
             </div>
           </div>
@@ -188,11 +198,11 @@
           <div class="flex flex-col space-y-3">
             <div class="flex justify-between">
               <h4>2016-current</h4>
-              <p>Freelance Software developer</p>
+              <p class="text-right">Freelance Software developer</p>
             </div>
             <div class="flex justify-between">
               <h4>2019-2020</h4>
-              <p>Programming Tutoring</p>
+              <p class="text-right">Programming Tutoring</p>
             </div>
           </div>
         </div>
@@ -227,7 +237,7 @@
         <hr />
         <div class="flex flex-col space-y-6">
           <h1 class="text-2xl font-semibold">Other fields skill</h1>
-          <div class="flex justify-between">
+          <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between">
             <div class="flex flex-col space-y-1">
               <h4 class="font-semibold">Marketing</h4>
               <p>- SEO</p>

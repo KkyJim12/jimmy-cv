@@ -1,6 +1,6 @@
 <template>
   <div
-    style="height: 60vh"
+    style="height: 70vh"
     class="bg-white shadow-md p-10 flex flex-col space-y-6 mt-6 rounded overflow-auto "
   >
     <h1 class="text-2xl font-semibold">Highlight Projects</h1>
