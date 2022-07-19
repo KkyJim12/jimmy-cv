@@ -30,22 +30,35 @@
         <hr />
         <div class="flex space-x-4">
           <font-awesome-icon
+            @click="openSocialLink('https://www.facebook.com/piyakarn.nmk/')"
             class="text-blue-500 hover:scale-110 transform duration-300 cursor-pointer"
             :icon="['fab', 'facebook-square']"
           />
           <font-awesome-icon
+            @click="openSocialLink('https://www.instagram.com/jimmynmk/')"
             class="text-pink-500 hover:scale-110 transform duration-300 cursor-pointer"
             :icon="['fab', 'instagram-square']"
           />
           <font-awesome-icon
+            @click="
+              openSocialLink(
+                'https://www.linkedin.com/in/piyakarn-nimmakulvirut-212844178/'
+              )
+            "
             class="text-blue-400 hover:scale-110 transform duration-300 cursor-pointer"
             :icon="['fab', 'linkedin']"
           />
           <font-awesome-icon
+            @click="openSocialLink('https://github.com/KkyJim12')"
             class="text-purple-800 hover:scale-110 transform duration-300 cursor-pointer"
             :icon="['fab', 'github']"
           />
           <font-awesome-icon
+            @click="
+              openSocialLink(
+                'https://www.youtube.com/channel/UC3Ax6ZsESImZZGLUkpbZPVw'
+              )
+            "
             class="text-red-500 hover:scale-110 transform duration-300 cursor-pointer"
             :icon="['fab', 'youtube']"
           />
@@ -211,8 +224,8 @@
           <h1 class="md:text-xl xl:text-2xl font-semibold">
             IELTS Overall - 6
           </h1>
-          <div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0">
-            <div class="flex flex-1 flex-col space-y-6">
+          <div class="flex flex-col space-y-3">
+            <div class="flex justify-between">
               <div class="flex space-x-4 items-center">
                 <h4 class="text-xl font-semibold">Listening</h4>
                 <p>- 6.5</p>
@@ -222,14 +235,14 @@
                 <p>- 6.5</p>
               </div>
             </div>
-            <div class="flex flex-1 flex-col space-y-6">
+            <div class="flex justify-between">
               <div class="flex space-x-4 items-center">
                 <h4 class="text-xl font-semibold">Speaking</h4>
-                <p class="text-right">- 6</p>
+                <p>- 6</p>
               </div>
               <div class="flex space-x-4 items-center">
                 <h4 class="text-xl font-semibold">Writing</h4>
-                <p class="text-right">- 5.5</p>
+                <p>- 5.5</p>
               </div>
             </div>
           </div>
@@ -237,7 +250,9 @@
         <hr />
         <div class="flex flex-col space-y-6">
           <h1 class="text-2xl font-semibold">Other fields skill</h1>
-          <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between">
+          <div
+            class="flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between"
+          >
             <div class="flex flex-col space-y-1">
               <h4 class="font-semibold">Marketing</h4>
               <p>- SEO</p>
@@ -287,5 +302,11 @@
 </style>
 
 <script>
-export default {}
+export default {
+  methods: {
+    openSocialLink(url) {
+      window.open(url, '_blank')
+    },
+  },
+}
 </script>
