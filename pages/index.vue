@@ -2,142 +2,9 @@
   <div
     class="grid grid-cols-12 p-10 gap-x-6 bg-gradient-to-r from-red-500 to-purple-500 min-h-screen gap-y-10 md:gap-y-6 2xl:gap-y-0"
   >
-    <div class="col-span-12 md:col-span-4 2xl:col-span-3">
-      <div
-        class="bg-white shadow-md p-10 flex flex-col space-y-3 rounded mb-6 h-full overflow-x-auto"
-      >
-        <img
-          class="w-full h-auto rounded-full"
-          src="/images/profile.jpeg"
-          alt="profile"
-        />
-        <hr />
-        <h1
-          class="text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-blue-500"
-        >
-          Piyakarn Nimmakulvirut (Jimmy)
-        </h1>
-        <h4>Gender: Male</h4>
-        <h4>Birthdate: 15/12/1996 (25 years)</h4>
-        <h4>
-          Address: <br />
-          1655/149 Petchburi tudmai road. Makkasan Ratchatewi <br />
-          Bangkok 10400
-        </h4>
-        <h4>TH. (+66) 0658528414</h4>
-        <h4>UK. (+44) 07824492883</h4>
-        <h4>Email: piyakarn.nmk@gmail.com</h4>
-        <hr />
-        <div class="flex space-x-4">
-          <font-awesome-icon
-            @click="openSocialLink('https://www.facebook.com/piyakarn.nmk/')"
-            class="text-blue-500 hover:scale-110 transform duration-300 cursor-pointer"
-            :icon="['fab', 'facebook-square']"
-          />
-          <font-awesome-icon
-            @click="openSocialLink('https://www.instagram.com/jimmynmk/')"
-            class="text-pink-500 hover:scale-110 transform duration-300 cursor-pointer"
-            :icon="['fab', 'instagram-square']"
-          />
-          <font-awesome-icon
-            @click="
-              openSocialLink(
-                'https://www.linkedin.com/in/piyakarn-nimmakulvirut-212844178/'
-              )
-            "
-            class="text-blue-400 hover:scale-110 transform duration-300 cursor-pointer"
-            :icon="['fab', 'linkedin']"
-          />
-          <font-awesome-icon
-            @click="openSocialLink('https://github.com/KkyJim12')"
-            class="text-purple-800 hover:scale-110 transform duration-300 cursor-pointer"
-            :icon="['fab', 'github']"
-          />
-          <font-awesome-icon
-            @click="
-              openSocialLink(
-                'https://www.youtube.com/channel/UC3Ax6ZsESImZZGLUkpbZPVw'
-              )
-            "
-            class="text-red-500 hover:scale-110 transform duration-300 cursor-pointer"
-            :icon="['fab', 'youtube']"
-          />
-        </div>
-      </div>
-    </div>
+    <div class="col-span-12 md:col-span-4 2xl:col-span-3"><ProfileInfo /></div>
     <div class="col-span-12 md:col-span-8 2xl:col-span-6">
-      <div
-        class="bg-white shadow-md p-10 flex flex-col space-y-6 rounded overflow-x-auto"
-      >
-        <h1 class="text-2xl font-semibold">Stacks</h1>
-        <div class="flex flex-col space-y-6">
-          <div class="flex space-x-6">
-            <font-awesome-icon
-              class="text-green-500 hover:scale-110 transform duration-300 cursor-pointer"
-              :icon="['fab', 'vuejs']"
-            />
-            <font-awesome-icon
-              class="hover:scale-110 text-blue-300 transform duration-300 cursor-pointer"
-              :icon="['fab', 'react']"
-            />
-            <font-awesome-icon
-              class="hover:scale-110 text-green-700 transform duration-300 cursor-pointer"
-              :icon="['fab', 'node']"
-            />
-            <font-awesome-icon
-              class="text-red-500 hover:scale-110 transform duration-300 cursor-pointer"
-              :icon="['fab', 'laravel']"
-            />
-            <font-awesome-icon
-              class="text-yellow-300 hover:scale-110 transform duration-300 cursor-pointer"
-              :icon="['fab', 'js']"
-            />
-            <font-awesome-icon
-              class="text-blue-600 hover:scale-110 transform duration-300 cursor-pointer"
-              :icon="['fab', 'php']"
-            />
-            <font-awesome-icon
-              class="text-yellow-600 hover:scale-110 transform duration-300 cursor-pointer"
-              :icon="['fab', 'git-alt']"
-            />
-          </div>
-          <div class="flex space-x-10">
-            <div class="flex flex-col space-y-2">
-              <h1 class="text-2xl font-semibold">Styling</h1>
-              <h4>- Tailwind</h4>
-              <h4>- Bootstrap</h4>
-              <h4>- Vuetify</h4>
-              <h4>- Material UI</h4>
-            </div>
-            <div class="flex flex-col space-y-2">
-              <h1 class="text-2xl font-semibold">Framework</h1>
-              <h4>- NestJS</h4>
-              <h4>- NuxtJS</h4>
-              <h4>- NextJS</h4>
-            </div>
-            <div class="flex flex-col space-y-2">
-              <h1 class="text-2xl font-semibold">Database</h1>
-              <h4>- Mysql</h4>
-              <h4>- Postgresql</h4>
-              <h4>- Mongodb</h4>
-            </div>
-            <div class="flex flex-col space-y-2">
-              <h1 class="text-2xl font-semibold">AWS</h1>
-              <h4>- S3</h4>
-              <h4>- EC2</h4>
-              <h4>- Route53</h4>
-              <h4>- Amplify</h4>
-            </div>
-            <div class="flex flex-col space-y-2">
-              <h1 class="text-2xl font-semibold">Cloud</h1>
-              <h4>- Docker</h4>
-              <h4>- Netlify</h4>
-              <h4>- Heroku</h4>
-              <h4>- Digital Ocean</h4>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Skill />
       <HighlightProject />
     </div>
     <div class="col-span-12 md:col-span-12 2xl:col-span-3">
@@ -302,11 +169,5 @@
 </style>
 
 <script>
-export default {
-  methods: {
-    openSocialLink(url) {
-      window.open(url, '_blank')
-    },
-  },
-}
+export default {}
 </script>
