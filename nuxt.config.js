@@ -19,7 +19,7 @@ export default {
 
     css: [],
 
-    plugins: [ { src: '~/plugins/fontawesome.js', mode: 'client' }],
+    plugins: [{ src: '~/plugins/fontawesome.js', mode: 'client' }],
 
     components: true,
 
@@ -30,6 +30,6 @@ export default {
     build: {},
 
     purgeCSS: {
-        whitelistPatterns: [/-fa$/, /^fa-/],
+        whitelistPatterns: [/-fa$/, /^fa-/, /-fab$/, /^fab-/],
     },
 };
