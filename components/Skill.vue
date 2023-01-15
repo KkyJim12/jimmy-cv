@@ -6,7 +6,19 @@
                 <font-awesome-icon
                     v-for="mainStack in mainStacks"
                     :key="mainStack.id"
-                    :class="`text-4xl text-${mainStack.color}-${mainStack.colorValue} hover:scale-110 transform duration-300 cursor-pointer`"
+                    :class="
+                        mainStack.title === 'VueJS'
+                            ? 'text-4xl text-green-500 hover:scale-110 transform duration-300 cursor-pointer'
+                            : mainStack.title === 'Laravel'
+                            ? 'text-4xl text-red-500 hover:scale-110 transform duration-300 cursor-pointer'
+                            : mainStack.title === 'Node'
+                            ? 'text-4xl text-lime-500 hover:scale-110 transform duration-300 cursor-pointer'
+                            : mainStack.title === 'JS'
+                            ? 'text-4xl text-yellow-500 hover:scale-110 transform duration-300 cursor-pointer'
+                            : mainStack.title === 'PHP'
+                            ? 'text-4xl text-blue-500 hover:scale-110 transform duration-300 cursor-pointer'
+                            : 'text-4xl text-orange-500 hover:scale-110 transform duration-300 cursor-pointer'
+                    "
                     :icon="['fab', `${mainStack.icon}`]"
                 />
             </div>
@@ -54,48 +66,36 @@ export default {
                     id: 1,
                     title: 'VueJS',
                     icon: 'vuejs',
-                    color: 'green',
-                    colorValue: '500',
                 },
 
                 {
                     id: 2,
-                    title: 'Node',
-                    icon: 'node',
-                    color: 'green',
-                    colorValue: '700',
+                    title: 'Laravel',
+                    icon: 'laravel',
                 },
 
                 {
                     id: 3,
-                    title: 'Laravel',
-                    icon: 'laravel',
-                    color: 'red',
-                    colorValue: '500',
+                    title: 'Node',
+                    icon: 'node',
                 },
 
                 {
                     id: 4,
                     title: 'JS',
                     icon: 'js',
-                    color: 'yellow',
-                    colorValue: '300',
                 },
 
                 {
                     id: 5,
                     title: 'PHP',
                     icon: 'php',
-                    color: 'blue',
-                    colorValue: '500',
                 },
 
                 {
                     id: 6,
                     title: 'GIT',
                     icon: 'git-alt',
-                    color: 'yellow',
-                    colorValue: '500',
                 },
             ],
         };

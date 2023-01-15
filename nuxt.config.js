@@ -17,19 +17,26 @@ export default {
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
 
-    css: [],
+    css: ['@/assets/css/main.css'],
 
     plugins: [{ src: '~/plugins/fontawesome.js', mode: 'client' }],
 
     components: true,
 
-    buildModules: ['@nuxt/typescript-build', '@nuxtjs/tailwindcss', '@nuxtjs/moment'],
+    buildModules: ['@nuxt/typescript-build', '@nuxt/postcss8', , '@nuxtjs/tailwindcss', '@nuxtjs/moment'],
 
     modules: [],
 
-    build: {},
+    build: {
+        postcss: {
+            plugins: {
+                tailwindcss: {},
+                autoprefixer: {},
+            },
+        },
+    },
 
     purgeCSS: {
-        whitelistPatterns: [/-fa$/, /^fa-/, /-fab$/, /^fab-/],
+        whitelistPatterns: [/-fa$/, /^fa-/],
     },
 };
