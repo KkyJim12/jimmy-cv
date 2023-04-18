@@ -5,7 +5,7 @@
             <div class="flex flex-col space-y-3">
                 <div class="grid grid-cols-3">
                     <div class="col-span-1">
-                        <h4>2022-current</h4>
+                        <h4>2022-2023</h4>
                     </div>
                     <div class="col-span-2">
                         <p class="text-right">MSc Computing at University of Northampton</p>
@@ -90,6 +90,24 @@
                         <h4 class="text-xl font-semibold">Writing</h4>
                         <p>- 5.5</p>
                     </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="flex flex-col space-y-6">
+            <h1 class="md:text-xl xl:text-2xl font-semibold">Soft Skills</h1>
+            <div class="flex justify-between">
+                <div class="flex flex-col space-y-3">
+                    <p>SEO (On-Off page)</p>
+                    <p>Facebook Ads</p>
+                    <p>Shopee & Lazada</p>
+                    <p>Photoshop & Video Editing</p>
+                </div>
+                <div class="flex flex-col space-y-3 text-right">
+                    <p>Car Driving</p>
+                    <p>Public Speaking</p>
+                    <p>Tutoring</p>
+                    <p>Selling</p>
                 </div>
             </div>
         </div>

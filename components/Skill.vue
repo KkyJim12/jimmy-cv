@@ -24,33 +24,51 @@
             </div>
             <div class="flex space-x-10">
                 <div class="flex flex-col space-y-2">
-                    <h1 class="text-2xl font-semibold">Language</h1>
+                    <h1 class="text-xl font-semibold">Language</h1>
                     <h4>- Javascript</h4>
+                    <h4>- Go</h4>
                     <h4>- PHP</h4>
                     <h4>- Java</h4>
                 </div>
                 <div class="flex flex-col space-y-2">
-                    <h1 class="text-2xl font-semibold">Styling</h1>
+                    <h1 class="text-xl font-semibold">Styling</h1>
                     <h4>- Tailwind</h4>
                     <h4>- Bootstrap</h4>
                     <h4>- Vuetify</h4>
+                    <h4>- Material UI</h4>
                 </div>
                 <div class="flex flex-col space-y-2">
-                    <h1 class="text-2xl font-semibold">Framework</h1>
+                    <h1 class="text-xl font-semibold">Framework</h1>
                     <h4>- VueJS</h4>
+                    <h4>- React</h4>
                     <h4>- NuxtJS</h4>
                     <h4>- Laravel</h4>
                     <h4>- NodeJS</h4>
+                    <h4>- Gin & Gorm</h4>
                 </div>
                 <div class="flex flex-col space-y-2">
-                    <h1 class="text-2xl font-semibold">Database</h1>
+                    <h1 class="text-xl font-semibold">Database</h1>
                     <h4>- Mysql</h4>
                     <h4>- Mongodb</h4>
+                    <h4>- Postgresql</h4>
+                    <h4>- Redis</h4>
+                    <h4>- Neo4J</h4>
                 </div>
                 <div class="flex flex-col space-y-2">
-                    <h1 class="text-2xl font-semibold">Cloud</h1>
+                    <h1 class="text-xl font-semibold">Cloud</h1>
                     <h4>- Docker</h4>
                     <h4>- AWS</h4>
+                    <h4>- GCP</h4>
+                    <h4>- Netlify</h4>
+                    <h4>- Digital Ocean</h4>
+                    <h4>- Heroku</h4>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <h1 class="text-xl font-semibold">Blockchain</h1>
+                    <h4>- Solidity</h4>
+                    <h4>- Hardhat</h4>
+                    <h4>- Web3.js</h4>
+                    <h4>- EtherJS</h4>
                 </div>
             </div>
         </div>
